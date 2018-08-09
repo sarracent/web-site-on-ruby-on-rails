@@ -1,0 +1,118 @@
+<!--Footer-->
+<footer class="page-footer center-on-small-only footer-green-blue-color">
+    <div class="container">
+        <!--Section: Footer Form AICA-->
+        <section class="section-footer">
+
+        <!--Section heading-->
+        <h3 class="section-heading h3-responsive text-xs-center dinpro-medium footer-contact"><%= t :contact_us %></h3>
+        <div class="row">
+            <%= form_for @contact do |f| %>
+            <div class="col-md-12">
+            <form>
+                <!--First row-->
+                <div class="row">
+                    <!--First column-->
+                    <div class="col-md-4">
+                        <div class="md-form">
+                            <%= f.text_field :name, placeholder: t('mail_mame'), required: true, id: "form-input-footer", class: "form-control form-footer dinpro-light" %>
+                        </div>
+                    </div>
+
+                    <!--Second column-->
+                    <div class="col-md-4">
+                        <div class="md-form">
+                            <%= f.email_field :email, placeholder: "Email", required: true, id: "form-input-footer", class: "form-control form-footer dinpro-light" %>
+                        </div>
+                    </div>
+
+                    <!--Third column-->
+                    <div class="col-md-4">
+                        <div class="md-form">
+                            <%= f.text_field :subject, placeholder: t('mail_subject'), required: true, id: "form-input-footer", class: "form-control form-footer dinpro-light" %>
+                        </div>
+                    </div>
+                </div>
+                <!--/.First row-->
+
+                <!--Second row-->
+                <div class="row">
+                    <!--First column-->
+                    <div class="col-md-12">
+                        <div class="field">
+                            <%= f.label t('mail_message'), class: 'dinpro-light label-textarea' %>
+                            <%= f.text_area :message, as: :text, required: true, id: 'form-textarea-footer', class: 'md-textarea dinpro-light' %>
+                        </div>
+                        <div class="field hidden-field">
+                            <%= f.text_field :nickname, hint: "Deje este campo en blanco", id: "form-input-footer", class: "form-control form-footer dinpro-light" %>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second row-->
+            </form>
+
+            <div class="text-xs-center">
+                <div class="actions">
+                    <%= f.submit t('send_button'), class: 'btn btn-footer-outline waves-effect dinpro-regular' %>
+                </div>
+            </div>
+        </div>
+        <% end %>
+       </div>
+    </section>
+    <!--Section: Footer Form AICA-->
+    </div>
+    <!--/.Footer Form-->
+
+    <div class="footer-social">
+        <div class="container">
+            <div class="row">
+                <!--First column-->
+                    <div class="col-md-3 footer-border-left footer-border-right border-left-hidden-md-down border-right-hidden-md-down">
+                        <ul class="list-inline list-facebook">
+                            <li class="list-inline-item"><a class="btn btn-footer-outline-facebook waves-effect" href="https://www.facebook.com/Laboratorios.aica/"><i class="icon-facebook-claro"></i></a></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-bold h6-responsive-facebook"><%= t :follow_us %> Facebook</h6></li>
+                        </ul>
+                    </div>
+                    
+                    <hr class="hidden-md-up">
+
+                    <!--Second column-->
+                    <div class="col-md-7 margin-list-facebook">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-bold h6-responsive-facebook">e-mail.</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-light h6-responsive-facebook">estrategia.negocios@aica.cu</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-light h6-responsive-facebook">/</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-bold h6-responsive-facebook"><%= t :contact_phone %> .</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-light h6-responsive-facebook">+537 250 1973</h6></li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-bold h6-responsive-facebook">fax.</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-light h6-responsive-facebook">+537 271 2576</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-light h6-responsive-facebook">/</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-bold h6-responsive-facebook"><%= t :contact_address %>.</h6></li>
+                            <li class="list-inline-item"><h6 class="h6-responsive dinpro-light h6-responsive-facebook">Ave. 23 e/ 268 y 270, La Lisa, La Habana, Cuba</h6></li>
+                        </ul>
+                    </div>
+                    
+                    <hr class="hidden-md-up">
+    
+
+                    <!--Third column-->
+                    <div class="col-md-2">
+                        <%= image_tag "aica-footer.png", class:"img-fluid pull-xs-right margin-img-aica-footer" %>
+                    </div>
+             </div>
+        </div>
+    </div>   
+    <!--Copyright-->
+    <div class="footer-copyright">
+    
+        <!--<div class="container-fluid">
+            © 2016 <a href="index.html"> Empresa Laboratorios AICA </a>
+        </div>-->
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->

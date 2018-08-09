@@ -1,0 +1,9 @@
+<% provide(:page_title, t('home_title') )%>
+<% provide(:home_active, 'active')%>
+
+<%= render "carousel" %>
+
+<%= raw @page.body %>
+
+<%= render "recent_news" %>
+

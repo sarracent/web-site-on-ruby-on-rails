@@ -1,0 +1,44 @@
+<blockquote class="blockquote block-quote-aica">
+    <p class="dinpro-regular title-aica mb-0"><%= t :product_portfolio %></p> 
+  </blockquote>
+  <%= form_for @search do |f| %>
+  <div class="row">
+     <div class="col-md-2">
+       <ul class="list-inline">
+          <li class="list-inline-item">
+            <%= link_to t('all_button'), productos_path, class:"list-inline-item inline-item dinpro-light p-color-gray btn-all" %>
+          </li>
+          <li class="list-inline-item inline-item dinpro-light p-color-gray">
+            /
+          </li>
+          <li class="list-inline-item inline-item dinpro-light p-color-gray">
+            <%= f.submit t('filter_button'), class:"btn-filter" %>
+          </li>
+        </ul>
+     </div>
+   <div class="col-md-7">
+      <ul class="list-inline">
+        <li class="list-inline-item">        
+          <div class="combo-box calibril">
+            <%= f.collection_select :pharmaceuticalform_id, Pharmaceuticalform.order(:name), :id, :name, include_blank: true, class: "mdb-select" %>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="combo-box calibril">
+            <%= f.collection_select :pharmaceuticalgroup_id, Pharmaceuticalgroup.order(:name), :id, :name, include_blank: true, class: "mdb-select" %>
+          </div>
+        </li>
+      </ul>
+   </div>
+   <div class="col-md-3">
+      <ul class="list-inline pull-right">
+        <li class="list-inline-item inline-item-views">
+          <%= link_to "", productos_lista_path, class:"dinpro-regular icon-lista" %>
+        </li>
+        <li class="list-inline-item inline-item">
+          <%= link_to "", productos_path, class:"dinpro-regular icon-miniaturas-on" %>
+        </li>
+      </ul>
+   </div>
+  </div>
+   <% end %>

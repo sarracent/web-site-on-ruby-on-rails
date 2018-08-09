@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pharmaceuticalforms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pharmaceuticalforms.each do |pharmaceuticalform| %>
+      <tr>
+        <td><%= pharmaceuticalform.name %></td>
+        <td><%= link_to 'Show', pharmaceuticalform %></td>
+        <td><%= link_to 'Edit', edit_pharmaceuticalform_path(pharmaceuticalform) %></td>
+        <td><%= link_to 'Destroy', pharmaceuticalform, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pharmaceuticalform', new_pharmaceuticalform_path %>

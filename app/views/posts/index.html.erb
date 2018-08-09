@@ -1,0 +1,23 @@
+<% provide(:page_title, t('news_title') )%>
+<% provide(:post_active, 'active')%>
+<!--Section: News AICA-->
+<section class="section news-aica">
+<!--First row-->
+<% @posts.each do |post| %>
+  <div class="row">
+  
+    <%= render post %>
+
+  </div>
+
+  <hr class="hr-margins-news">
+
+<% end %>
+
+<!--Pagination-->
+ <div class="text-xs-center dinpro-regular">
+    <%= will_paginate @posts, :previous_label => '<i class="icon-keyboard_arrow_left"></i>', :next_label => '<i class="icon-keyboard_arrow_right"></i>' %>
+</div>
+<!--/.Pagination-->   
+</section>
+<!--/Section: News AICA-->

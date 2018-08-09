@@ -1,0 +1,79 @@
+<header>
+        <div class="row">
+
+            <div class="col-xs-10">
+                <% if notice %>
+                  <p class="notice"><%= notice %></p>
+                <% elsif alert %>
+                   <p class="alert"><%= alert %></p>
+                <% end %>
+
+            </div>
+
+            <div class="col-xs-2">
+                <%= image_tag "aica-header.png", class:"img-fluid img-aica-header pull-xs-right" %>
+            </div>
+        </div>
+ <!--Navbar-->
+        <nav class="navbar">
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="icon-dehaze"></i></button>
+
+            <div class="container-fluid navbar-container">
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <!--Navbar icons-->
+                    <ul class="nav navbar-nav nav-flex-icons">
+
+                        <%= tag.li class: 'nav-item nav-link active-i dinpro-regular nav' do %>
+                            <%= link_to "ES", locale: :es %>
+                        <% end unless current_page?(locale: :es) %>    
+                        
+                        <%= tag.li class: 'nav-item nav-link active-i dinpro-regular nav' do %>
+                            <%= link_to "EN", locale: :en %>
+                        <% end unless current_page?(locale: :en) %>
+
+                        <%= tag.li class: 'nav-item nav-link active-i dinpro-regular nav' do %>
+                            <%= link_to "FR", locale: :fr %>
+                        <% end unless current_page?(locale: :fr) %>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-search btnslide"><i class="icon-buscador"></i></a>
+                        </li>
+                        <div class="nav-item contenedor" >
+                            <div class="nav-link" id="slideIzq">    
+                                <form class="form-inline">
+                                    <input class="form-control form-search dinpro-regular" type="text" placeholder="BÚSQUEDA" data-behavior="autocomplete">
+                                </form>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link dinpro-regular cerrar-modal"> 
+                                <div class="label-close "> X </div> 
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <%= link_to t('home_title'), root_path, class:"nav-link dinpro-regular nav-home #{yield(:home_active)}"%>
+                        </li>
+                        <li class="nav-item ">
+                            <%= link_to 'AICA', aica_path, class:"nav-link dinpro-regular nav-aica #{yield(:aica_active)}"%>
+                        </li>
+                        <li class="nav-item ">
+                            <%= link_to t('research_title'), investigacion_path, class:"nav-link dinpro-regular nav-imasd #{yield(:investigation_active)}"%>
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to t('products_title'), productos_path, class:"nav-link dinpro-regular nav-news #{yield(:product_active)}"%>
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to t('news_title'), noticias_path, class:"nav-link dinpro-regular nav-news #{yield(:post_active)}"%>
+                        </li>
+                    </ul>
+                </div><!--/.Collapse content-->
+            </div>
+        </nav><!--/.Navbar-->        
+</header>

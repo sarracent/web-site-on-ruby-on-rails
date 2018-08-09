@@ -1,0 +1,58 @@
+<div class="row">
+
+        <!--First column-->
+        <div class="col-md-6 view-border-right border-right-hidden-md-down recent-news-padding-bottom">
+
+            <!--Featured news-->
+            <div class="post-wrapper post-wrapper-right">
+                <!--Image-->
+                <div class="view overlay hm-white-light z-depth-1-half">
+                  <%= image_tag @post_first.asset.url(:medium), class:"img-fluid img-news-margins" %>
+                <div class="mask"></div>
+                </div>
+
+                <!--Post data-->
+                <h3 class="h3-responsive dinpro-medium"><%= link_to truncate(@post_first.title, length: 55), @post_first, class:"h3-news" %></h3>
+                <h5 class="h5-responsive h5-news calibril"><%= @post_first.created_at.strftime('%d / %m / %Y') %></h5>
+                <!--Post excerpt-->
+                <p class="calibril p-color-gray p-margin-botom"><%= truncate(@post_first.description, length: 350) %></p>
+
+                <!--"Read more" button-->
+                <div class="read-more">
+                    <%= link_to t('red_button'), @post_first, class: 'btn btn-margin btn-red-more-outline waves-effect dinpro-regular' %>
+                </div>
+            </div>
+            <!--/Featured news-->
+        </div>
+        <!--/First column-->
+
+        <hr class="hidden-md-up">
+
+        <!--Second column-->
+        <div class="col-md-6">
+
+            <!--Featured news-->
+            <div class="post-wrapper-left">
+
+                <!--Image-->
+                <div class="view overlay hm-white-light z-depth-1-half">
+                     <%= image_tag @post_second.asset.url(:medium), class:"img-fluid img-news-margins" %>
+                    <div class="mask"></div>
+                </div>
+
+                <!--Post data-->
+                <h3 class="h3-responsive h3-news dinpro-medium"><a href=""><%= link_to truncate(@post_second.title, length: 55), @post_second, class:"h3-news" %></a></h3>
+                <h5 class="h5-responsive h5-news calibril"><%= @post_second.created_at.strftime('%d / %m / %Y') %></h5>
+
+                <!--Post excerpt-->
+                <p class="calibril p-color-gray p-margin-botom"><%= truncate(@post_second.description, length: 350) %></p>
+
+                <!--"Read more" button-->
+                <div class="read-more">
+                    <%= link_to t('red_button'), @post_second, class: 'btn btn-margin btn-red-more-outline waves-effect dinpro-regular' %>
+                </div>
+            </div>
+            <!--/Featured news-->
+        </div>
+        <!--/Second column-->
+    </div>

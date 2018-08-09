@@ -1,0 +1,15 @@
+<% provide(:page_title, @post.title )%>
+<% provide(:post_active, 'active')%>
+<!--Section: News AICA-->
+<section class="section news-aica">
+
+  <blockquote class="block-quote-aica">
+    <p class="dinpro-regular title-post-aica mb-0"><%= @post.title %></p> 
+  </blockquote> 
+    <div class="wide">
+      <h5 class="h5-responsive h5-post-aica calibril"><%= @post.created_at.strftime('%d / %m / %Y') %></h5>
+      <div class="calibril p-color-gray"><%= raw @post.body %></div>
+    </div>
+    <div class="last_col"></div>
+</section>
+<!--/Section: News AICA-->

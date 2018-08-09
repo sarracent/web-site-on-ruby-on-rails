@@ -1,0 +1,2 @@
+module PharmaceuticalgroupsHelper
+end

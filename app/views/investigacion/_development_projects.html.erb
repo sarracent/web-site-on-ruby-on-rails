@@ -1,0 +1,57 @@
+<section class="section-development-projects">
+      <div class="row">
+		  <!--Featured news-->
+		  <div class="col-md-6">
+		      <!--Image-->
+		    <div class="view overlay hm-white-light z-depth-1-half">
+		      <%= image_tag @post_first_category_second.asset.url(:medium), class:"img-fluid" %>
+		      <div class="mask"></div>
+		    </div>
+		    
+		  </div>
+		  <!--/.Featured news-->
+
+		  <!--Post wrapper-->
+		  <div class="col-md-6 post-wrapper">
+		    
+		    <!--Post data-->
+		    <blockquote class="blockquote block-quote-development-projects">
+		    <h3 class="h3-responsive dinpro-medium"><%= link_to @post_first_category_second.title, @post_first_category_second, class:"h3-news" %></h3>
+		    </blockquote>
+		    <!--"Read more" button-->
+		    <div class="read-more">
+		      <%= link_to 'SABER MÁS', @post_first_category_second, class: 'btn btn-margin btn-red-more-outline waves-effect dinpro-regular' %>
+		    </div>
+		  </div>
+		  <!--/.Post excerpt-->
+	   </div>
+
+	   <hr class="hr-margins">
+
+	   <div class="row">
+		  <!--Featured news-->
+		  <div class="col-md-6">
+		      <!--Image-->
+		    <div class="view overlay hm-white-light z-depth-1-half">
+		      <%= image_tag @post_second_category_second.asset.url(:medium), class:"img-fluid" %>
+		      <div class="mask"></div>
+		    </div>
+		    
+		  </div>
+		  <!--/.Featured news-->
+
+		  <!--Post wrapper-->
+		  <div class="col-md-6 post-wrapper">
+		    
+		    <!--Post data-->
+		    <blockquote class="blockquote block-quote-development-projects">
+		    <h3 class="h3-responsive dinpro-medium"><%= link_to @post_second_category_second.title, @post_second_category_second, class:"h3-news" %></h3>
+		    </blockquote>
+		    <!--"Read more" button-->
+		    <div class="read-more">
+		      <%= link_to 'SABER MÁS', @post_second_category_second, class: 'btn btn-margin btn-red-more-outline waves-effect dinpro-regular' %>
+		    </div>
+		  </div>
+		  <!--/.Post excerpt-->
+	   </div>
+</section>

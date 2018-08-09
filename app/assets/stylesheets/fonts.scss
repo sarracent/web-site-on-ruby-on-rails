@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'calibril';
+    src: url('calibril.ttf'), url('calibril.eot'), url('calibril.woff'), url('calibril.woff2');
+}
+
+@font-face {
+    font-family: 'dinpro-bold';
+    src: url('DINPro-Bold.ttf'), url('DINPro-Bold.eot'), url('DINPro-Bold.otf'), url('DINPro-Bold.woff'), url('DINPro-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'dinpro-light';
+    src: url('DINPro-Light.ttf'), url('DINPro-Light.eot'), url('DINPro-Light.otf'), url('DINPro-Light.woff'), url('DINPro-Light.woff2');
+}
+
+@font-face {
+    font-family: 'dinpro-medium';
+    src: url('DINPro-Medium.ttf'), url('DINPro-Medium.eot'), url('DINPro-Medium.otf'), 
+         url('DINPro-Medium.woff'), url('DINPro-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'dinpro-regular';
+    src: url('DINPro-Regular.ttf'), url('DINPro-Regular.eot'), url('DINPro-Regular.otf'), 
+         url('DINPro-Regular.woff'), url('DINPro-Regular.woff2');
+}
+
+.calibril {
+
+    font-family: 'calibril' !important;  
+
+}
+
+.dinpro-bold {
+
+    font-family: 'dinpro-bold' !important;
+
+}
+
+.dinpro-light {
+
+    font-family: 'dinpro-light' !important;
+
+}
+
+.font-size {
+
+    font-size: 35pt;
+}
+
+.dinpro-medium {
+
+    font-family: 'dinpro-medium' !important;
+
+}
+
+.dinpro-regular {
+
+    font-family: 'dinpro-regular' !important;
+
+}
+

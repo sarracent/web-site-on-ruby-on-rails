@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product#"><!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<!--[if IE]><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Damian Sarracent Lopez" />
+    <meta name="description" content="sitio web oficial aica, official aica website" />
+    <meta name="keywords"  content="aica, cuba, empresa, Biocubafarma, producción, medicamentos, genéricos, farmacéutios, inyectables líquidos, liofilizados, colirios, company, production, medicines, generics, pharmaceuticals, liquid injectables, lyophilized, eye drops" />
+    <meta name="Resource-type" content="Document" />
+    <title><%= yield(:page_title) %> | AICA</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <%= render "layouts/navbar" %>
+
+      <%= yield %>
+
+    </div>
+
+    <%= render "layouts/footer" %>
+
+  </body>
+</html>

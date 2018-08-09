@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'iconaica';
+  src:  url('iconaica.eot?jedt0j');
+  src:  url('iconaica.eot?jedt0j#iefix') format('embedded-opentype'),
+    url('iconaica.ttf?jedt0j') format('truetype'),
+    url('iconaica.woff?jedt0j') format('woff'),
+    url('iconaica.svg?jedt0j#iconaica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconaica' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-descargar-over:before {
+  content: "\e909";
+}
+.icon-leer-over:before {
+  content: "\e90a";
+}
+.icon-buscador:before {
+  content: "\e900";
+}
+.icon-descargar:before {
+  content: "\e901";
+  color: #999;
+}
+.icon-facebook-claro:before {
+  content: "\e902";
+  color: #99cad7;
+}
+.icon-leer:before {
+  content: "\e903";
+  color: #999;
+}
+.icon-lista:before {
+  content: "\e904";
+}
+.icon-lista-on:before {
+  content: "\e905";
+  color: #359bb5;
+}
+.icon-log-in:before {
+  content: "\e906";
+}
+.icon-miniaturas:before {
+  content: "\e907";
+}
+.icon-miniaturas-on:before {
+  content: "\e908";
+  color: #359bb5;
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e314";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e315";
+}
+

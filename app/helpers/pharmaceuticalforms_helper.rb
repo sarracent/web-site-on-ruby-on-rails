@@ -1,0 +1,2 @@
+module PharmaceuticalformsHelper
+end

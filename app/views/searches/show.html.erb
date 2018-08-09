@@ -1,0 +1,17 @@
+<% provide(:page_title, t('products_title') )%>
+<% provide(:product_active, 'active')%>
+<section class="products">
+  <%= render "portafolio" %>
+  <hr class="hr-margins-products">
+  <% if @search.products.empty? %>
+    <div class="wrapper-search">
+  		<h1 class="dinpro-regular emp-lab-aica color-title-aica text-uppercase">No hay resultados para su búsqueda.
+</h1>
+  	</div>
+  <% else %>
+  <div class="row">
+    <%= render @search.products %>
+  </div>
+  <% end %>
+  <hr class="hr-margins-paginate">
+</section>

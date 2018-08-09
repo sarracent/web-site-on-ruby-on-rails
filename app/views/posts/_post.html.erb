@@ -1,0 +1,25 @@
+<!--Featured news-->
+  <div class="col-md-6">
+      <!--Image-->
+    <div class="view overlay hm-white-light z-depth-1-half">
+      <%= image_tag post.asset.url(:medium), class:"img-fluid" %>
+    <div class="mask"></div>
+    </div>
+    
+  </div>
+  <!--/.Featured news-->
+
+  <!--Post wrapper-->
+  <div class="col-md-6 ">
+    
+      <!--Post data-->
+    <h3 class="h3-responsive dinpro-medium"><%= link_to post.title, post, class:"h3-news" %></h3>
+    <h5 class="h5-responsive h5-post-date calibril"><%= post.created_at.strftime('%d / %m / %Y') %></h5>
+    <!--Post excerpt-->
+    <p class="calibril p-color-gray p-margin-botom-post"><%= truncate(post.description, length: 295) %></p>
+    <!--"Read more" button-->
+    <div class="read-more">
+                    <%= link_to t('red_button'), post, class: 'btn btn-margin btn-red-more-outline waves-effect dinpro-regular' %>
+                </div>
+  </div>
+<!--/.Post excerpt-->

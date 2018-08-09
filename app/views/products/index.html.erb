@@ -1,0 +1,17 @@
+<% provide(:page_title, t('products_title') )%>
+<% provide(:product_active, 'active')%>
+<section class="products">
+  <%= render "portafolio" %>
+  <hr class="hr-margins-products">
+  <div class="row">
+    <% @products.each do |product| %>
+       <%= render product %>
+    <% end %>
+  </div>
+  <hr class="hr-margins-paginate">
+  <!--Pagination-->
+  <div class="text-xs-center dinpro-regular">
+    <%= will_paginate @products, :previous_label => '<i class="icon-keyboard_arrow_left"></i>', :next_label => '<i class="icon-keyboard_arrow_right"></i>' %>
+  </div>
+  <!--/.Pagination-->
+</section>

@@ -1,0 +1,816 @@
+<% provide(:page_title, t('products_title') )%>
+<% provide(:product_active, 'active')%>
+<section class="products">
+    <%= render "portafolio_list" %>
+
+       <% if @products_a.empty? %>
+        <% else %>
+       <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">A</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div> 
+	    <% @products_a.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+        
+        <% if @products_b.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">B</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_b.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+        <% end %>
+
+       <% if @products_c.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">C</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_c.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+        
+        <% if @products_d.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">D</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_d.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+        <% end %>
+
+        <% if @products_e.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">E</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_e.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+        
+        <% if @products_f.empty? %>
+        <% else %>  
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">F</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_f.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+        
+        <% if @products_g.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">G</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_g.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_h.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">H</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_h.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_i.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">I</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_i.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_j.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">J</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_j.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_k.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">K</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_k.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_l.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">L</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_l.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_m.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">M</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_m.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_n.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">N</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_n.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_o.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">O</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_o.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_p.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">P</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_p.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_q.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">Q</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_q.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_r.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">R</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_r.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_s.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">S</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_s.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_t.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">T</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_t.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_u.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">U</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_u.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_v.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">V</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_v.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	     <% end %>
+
+	    <% if @products_w.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">W</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_w.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_x.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">X</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_x.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_y.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">Y</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_y.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+
+	    <% if @products_z.empty? %>
+        <% else %>
+	    <div class="row">
+         <div class="col-md-1 letter-block">
+           <div class="block dinpro-light">Z</div>
+         </div>
+         <div class="col-md-11 line-products">
+            <hr class="hr-margins">
+         </div>
+       </div>
+       <% @products_z.each do |product| %>
+	      <div class="row">
+	        <div class="col-md-1 product-read-dowload">
+	            <ul class="list-inline pull-right">
+			        <li class="list-inline-item">
+			          <%= link_to "", product.document.url, target: "_blank", class:"dinpro-regular icon-leer" %>
+			        </li>
+			        <li class="list-inline-item">
+			          <%= link_to "", productos_path, class:"dinpro-regular icon-descargar" %>
+			        </li>
+			    </ul>
+	        </div>
+	        <div class="col-md-11">
+	          <div class="product">
+	          <div class="dinpro-light product-aica-list"><%= product.name %></div>
+	          </div>
+	        </div>
+	       </div>
+	    <% end %>
+	    <% end %>
+</section>
+
+
+
+
+
